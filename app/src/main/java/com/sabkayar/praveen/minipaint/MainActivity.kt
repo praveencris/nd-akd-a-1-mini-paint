@@ -1,5 +1,4 @@
-
- package com.sabkayar.praveen.minipaint
+package com.sabkayar.praveen.minipaint
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
