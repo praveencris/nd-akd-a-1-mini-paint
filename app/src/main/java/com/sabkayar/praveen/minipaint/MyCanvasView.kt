@@ -18,7 +18,7 @@ class MyCanvasView(context: Context) : View(context) {
 
     private val paint = Paint().apply {
         color = drawColor
-// Smooths out edges of what is drawn without affecting shape.
+        // Smooths out edges of what is drawn without affecting shape.
         isAntiAlias = true
         // Dithering affects how colors with higher-precision than the device are down-sampled.
         isDither = true
