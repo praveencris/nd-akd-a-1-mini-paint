@@ -4,6 +4,7 @@ import android.content.Context
 import android.graphics.Bitmap
 import android.graphics.Canvas
 import android.graphics.Paint
+import android.graphics.Path
 import android.view.View
 import androidx.core.content.res.ResourcesCompat
 
@@ -28,6 +29,7 @@ class MyCanvasView(context: Context) : View(context) {
         strokeWidth = STROKE_WIDTH // default: Hairline-width (really thin)
     }
 
+    private val path = Path()
 
     override fun onSizeChanged(w: Int, h: Int, oldw: Int, oldh: Int) {
         super.onSizeChanged(w, h, oldw, oldh)
