@@ -66,7 +66,7 @@ class MyCanvasView(context: Context) : View(context) {
     }
 
     private fun touchUp() {
-        TODO("Not yet implemented")
+     path.reset()
     }
 
 
