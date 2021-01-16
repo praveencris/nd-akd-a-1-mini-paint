@@ -21,6 +21,9 @@ class MyCanvasView(context: Context) : View(context) {
     private var motionTouchEventX = 0f
     private var motionTouchEventY = 0f
 
+    private var currentX = 0f
+    private var currentY = 0f
+
     private val paint = Paint().apply {
         color = drawColor
         // Smooths out edges of what is drawn without affecting shape.
@@ -70,6 +73,9 @@ class MyCanvasView(context: Context) : View(context) {
     }
 
     private fun touchStart() {
-        TODO("Not yet implemented")
+        path.reset()
+        path.moveTo(motionTouchEventX, motionTouchEventY)
+        currentX = motionTouchEventX
+        currentY = motionTouchEventY
     }
 }
